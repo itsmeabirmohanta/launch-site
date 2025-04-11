@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  /* Updated color palette based on Future Shift Labs blue theme */
+  --primary-blue: #2442d7;
+  --primary-blue-light: #3e66f5;
+  --primary-blue-dark: #1e3aa3;
+  --secondary-blue: #5377fd;
+  --accent-blue: #00d4ff;
+  --background-blue: #1e32a8;
+  --text-dark: #0f172a;
+  --text-light: #f1f5f9;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --shadow-strong: 0 10px 25px rgba(0, 0, 0, 0.25);
+  --glow-blue: 0 0 20px rgba(83, 119, 253, 0.6);
+  --glow-blue-strong: 0 0 30px rgba(83, 119, 253, 0.8);
+  
+  /* Animation speeds */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.5s ease;
+  --transition-slow: 0.8s ease;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 5rem;
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+}
+
+body {
+  background: #000;
+  color: var(--text-light);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improved scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue-light);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-blue);
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Add Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'); 
